@@ -46,4 +46,8 @@
 
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Cuong's String-->
+
+    <string name="api_key">AIzaSyCVEffvfta5Xjbc1wK8krVlLFe6Bjt4hd4</string>
+    <string name="map_toolbar_hint">Where do you want to go?</string>
 </resources>
