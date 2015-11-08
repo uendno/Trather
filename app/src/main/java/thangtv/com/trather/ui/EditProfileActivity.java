@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
@@ -23,11 +24,11 @@ import android.widget.PopupMenu;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.parse.GetDataCallback;
 import com.parse.ParseAnonymousUtils;
 import com.parse.ParseException;
 import com.parse.ParseFile;
 import com.parse.ParseUser;
-import com.parse.ProgressCallback;
 import com.parse.SaveCallback;
 import com.parse.SignUpCallback;
 import com.wdullaer.materialdatetimepicker.date.DatePickerDialog;
@@ -50,12 +51,13 @@ public class EditProfileActivity extends AppCompatActivity implements View.OnCli
     private Spinner editGender;
     private ImageView editAvatar;
     private Button buttonChangeAvatar;
+    private ProgressDialog progressDialog;
+
     private static final int REQUEST_CAMERA = 0;
     private static final int SELECT_FILE = 1;
     private static final int PIC_CROP = 2;
-    private Bitmap bitmapAvatar;
+
     private Uri picUri;
-    private ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +65,7 @@ public class EditProfileActivity extends AppCompatActivity implements View.OnCli
         setContentView(R.layout.activity_edit_profile);
         setupToolbar();
 
+        //Connect views
         editName = (EditText) findViewById(R.id.edit_name);
         editDateOfBirth = (EditText) findViewById(R.id.edit_date_of_birth);
         editPhone = (EditText) findViewById(R.id.edit_phone_number);
@@ -72,11 +75,45 @@ public class EditProfileActivity extends AppCompatActivity implements View.OnCli
         editGender = (Spinner) findViewById(R.id.edit_gender);
         buttonChangeAvatar = (Button) findViewById(R.id.button_change_avatar);
 
+        //Set up button change avatar
         buttonChangeAvatar.setOnClickListener(this);
 
+        //set up date of birth input field
         editDateOfBirth.setFocusable(false);
         editDateOfBirth.setClickable(true);
         editDateOfBirth.setOnClickListener(this);
+
+        //Determine whether the current user is an anonymous user
+        if (!ParseAnonymousUtils.isLinked(ParseUser.getCurrentUser())) {
+
+            //If current user is not anonymous user
+            //Get current user data from Parse.com
+            ParseUser currentUser = ParseUser.getCurrentUser();
+            if (currentUser != null) {
+
+                //get user information
+                editName.setText(currentUser.getString("name"));
+                editDateOfBirth.setText(currentUser.getString("date_of_birth"));
+                if (currentUser.getString("gender").equals("Male")) {
+                    editGender.setSelection(1);
+                } else {
+                    editGender.setSelection(2);
+                }
+                editPhone.setText(currentUser.getString("phone"));
+                editDescription.setText(currentUser.getString("description"));
+                editIDCardNumber.setText(currentUser.getString("id_card_number"));
+
+                //get avatar
+                ParseFile file = currentUser.getParseFile("avatar");
+                file.getDataInBackground(new GetDataCallback() {
+                    @Override
+                    public void done(byte[] bytes, ParseException e) {
+                        Bitmap bitmap = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
+                        editAvatar.setImageBitmap(bitmap);
+                    }
+                });
+            }
+        }
 
         //Set up gender spinner
         List<String> list = new ArrayList<String>();
@@ -86,9 +123,6 @@ public class EditProfileActivity extends AppCompatActivity implements View.OnCli
                 android.R.layout.simple_spinner_item, list);
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         editGender.setAdapter(dataAdapter);
-
-        //Set up avatar
-        bitmapAvatar = ((BitmapDrawable) editAvatar.getDrawable()).getBitmap();
 
         //Set up progress dialog
         progressDialog = new ProgressDialog(this);
@@ -159,7 +193,7 @@ public class EditProfileActivity extends AppCompatActivity implements View.OnCli
                         break;
                     case R.id.remove_picture:
                         editAvatar.setImageResource(R.drawable.user_no_avatar);
-                        bitmapAvatar = ((BitmapDrawable) editAvatar.getDrawable()).getBitmap();
+                        /*bitmapAvatar = ((BitmapDrawable) editAvatar.getDrawable()).getBitmap();*/
                         break;
                 }
                 return true;
@@ -207,8 +241,8 @@ public class EditProfileActivity extends AppCompatActivity implements View.OnCli
             }
             if (requestCode == PIC_CROP) {
                 Bundle extras = data.getExtras();
-                bitmapAvatar = extras.getParcelable("data");
-                editAvatar.setImageBitmap(bitmapAvatar);
+                Bitmap bitmap = extras.getParcelable("data");
+                editAvatar.setImageBitmap(bitmap);
             }
 
         }
@@ -217,8 +251,9 @@ public class EditProfileActivity extends AppCompatActivity implements View.OnCli
     private void signUpUser() {
 
         //convert bitmapAvatar to byte[]
+        Bitmap bitmap = ((BitmapDrawable) editAvatar.getDrawable()).getBitmap();
         ByteArrayOutputStream stream = new ByteArrayOutputStream();
-        bitmapAvatar.compress(Bitmap.CompressFormat.PNG, 100, stream);
+        bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
         byte[] byteArray = stream.toByteArray();
 
         //make parse file of avatar and save it
@@ -229,6 +264,7 @@ public class EditProfileActivity extends AppCompatActivity implements View.OnCli
                 if (e != null) {
                     Toast.makeText(EditProfileActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
                 } else {
+
 
                     //get intent
                     final Intent intent = getIntent();
@@ -244,7 +280,7 @@ public class EditProfileActivity extends AppCompatActivity implements View.OnCli
                     //set other information
                     user.put("name", editName.getText().toString().trim());
                     user.put("gender", editGender.getSelectedItem().toString());
-                    user.put("date_of_bird", editDateOfBirth.getText().toString());
+                    user.put("date_of_birth", editDateOfBirth.getText().toString());
                     user.put("phone", editPhone.getText().toString().trim());
                     user.put("id_card_number", editIDCardNumber.getText().toString().trim());
                     user.put("description", editDescription.getText().toString().trim());
@@ -269,11 +305,6 @@ public class EditProfileActivity extends AppCompatActivity implements View.OnCli
                     });
                 }
             }
-        }, new ProgressCallback() {
-            @Override
-            public void done(Integer integer) {
-                progressDialog.show();
-            }
         });
 
     }
@@ -281,8 +312,9 @@ public class EditProfileActivity extends AppCompatActivity implements View.OnCli
     private void updateUser() {
 
         //convert bitmapAvatar to byte[]
+        Bitmap bitmap = ((BitmapDrawable) editAvatar.getDrawable()).getBitmap();
         ByteArrayOutputStream stream = new ByteArrayOutputStream();
-        bitmapAvatar.compress(Bitmap.CompressFormat.PNG, 100, stream);
+        bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
         byte[] byteArray = stream.toByteArray();
 
         //make parse file of avatar and save it
@@ -298,12 +330,12 @@ public class EditProfileActivity extends AppCompatActivity implements View.OnCli
                     Intent intent = getIntent();
 
                     //new user
-                    ParseUser user = ParseUser.getCurrentUser();
+                    final ParseUser user = ParseUser.getCurrentUser();
                     //set other information
 
                     user.put("name", editName.getText().toString().trim());
                     user.put("gender", editGender.getSelectedItem().toString());
-                    user.put("date_of_bird", editDateOfBirth.getText().toString());
+                    user.put("date_of_birth", editDateOfBirth.getText().toString());
                     user.put("phone", editPhone.getText().toString().trim());
                     user.put("id_card_number", editIDCardNumber.getText().toString().trim());
                     user.put("description", editDescription.getText().toString().trim());
@@ -317,9 +349,6 @@ public class EditProfileActivity extends AppCompatActivity implements View.OnCli
                             if (e == null) {
                                 Toast.makeText(EditProfileActivity.this, "Update completed", Toast.LENGTH_SHORT).show();
 
-                                //Send user to MapViewActivity
-                                Intent intent1 = new Intent(EditProfileActivity.this, ProfileActivity.class);
-                                startActivity(intent1);
                                 finish();
                             } else {
                                 Toast.makeText(EditProfileActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
@@ -328,11 +357,7 @@ public class EditProfileActivity extends AppCompatActivity implements View.OnCli
                     });
                 }
             }
-        }, new ProgressCallback() {
-            @Override
-            public void done(Integer integer) {
-                progressDialog.show();
-            }
+
         });
 
     }
@@ -354,6 +379,7 @@ public class EditProfileActivity extends AppCompatActivity implements View.OnCli
     public void onDateSet(DatePickerDialog view, int year, int monthOfYear, int dayOfMonth) {
         editDateOfBirth.setText(dayOfMonth + "/" + monthOfYear + "/" + year);
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -363,6 +389,8 @@ public class EditProfileActivity extends AppCompatActivity implements View.OnCli
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
+
         switch (item.getItemId()) {
             case R.id.done:
                 if (editName.getText().toString().trim().equals("")) {
@@ -389,6 +417,8 @@ public class EditProfileActivity extends AppCompatActivity implements View.OnCli
                     return false;
                 }
 
+                progressDialog.show();
+
                 //Check if we should signUpUser or updateUser and then send user to MapViewActivity
 
                 if (ParseAnonymousUtils.isLinked(ParseUser.getCurrentUser())) {
@@ -397,7 +427,7 @@ public class EditProfileActivity extends AppCompatActivity implements View.OnCli
                     //If current user is not anonymous user
                     //Get current user data from Parse.com
                     ParseUser currentUser = ParseUser.getCurrentUser();
-                    if (currentUser!= null) {
+                    if (currentUser != null) {
                         //Send logged in user to MapViewActivity.class
                         updateUser();
 

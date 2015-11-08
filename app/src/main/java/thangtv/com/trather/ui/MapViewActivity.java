@@ -41,8 +41,32 @@ public class MapViewActivity extends AppCompatActivity implements
     private TextView navName;
     private TextView navMail;
     private CircleImageView navAvatar;
+    private NavigationView navigationView;
 
     GoogleMap googleMap;
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        //get user
+        ParseUser user = ParseUser.getCurrentUser();
+
+        //Set up navigation header
+        navName.setText(user.getString("name"));
+        navMail.setText(user.getEmail());
+        ParseFile file = user.getParseFile("avatar");
+        file.getDataInBackground(new GetDataCallback() {
+            @Override
+            public void done(byte[] bytes, ParseException e) {
+                Bitmap bitmap = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
+                navAvatar.setImageBitmap(bitmap);
+            }
+        });
+
+        //Set checked item back to map
+        navigationView.setCheckedItem(R.id.map);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,15 +75,25 @@ public class MapViewActivity extends AppCompatActivity implements
 
         //set up toolbar
         toolbar = (Toolbar) findViewById(R.id.toolbar);
+        drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        navigationView = (NavigationView) findViewById(R.id.nav_view);
+        View header = navigationView.inflateHeaderView(R.layout.nav_header);
+        navName = (TextView) header.findViewById(R.id.nav_user_name);
+        navMail = (TextView) header.findViewById(R.id.nav_user_email);
+        navAvatar = (CircleImageView) header.findViewById(R.id.nav_avatar);
 
 
         //set up navigation drawer
-        drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, null, R.string.nav_open, R.string.nav_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
+        //set up navigationview on item click listener
+        navigationView.setNavigationItemSelectedListener(this);
+
+
+        //Set up toolbar
         if (toolbar != null) {
             setSupportActionBar(toolbar);
             toolbar.setNavigationIcon(R.drawable.ic_reorder_black_18dp);
@@ -71,32 +105,7 @@ public class MapViewActivity extends AppCompatActivity implements
             });
         }
 
-        // setup navigation view
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
-
-        //get user
-        ParseUser user = ParseUser.getCurrentUser();
-
-        //connect textviews in the header of navigation drawer
-        View header = navigationView.inflateHeaderView(R.layout.nav_header);
-        navName = (TextView) header.findViewById(R.id.nav_user_name);
-        navMail = (TextView) header.findViewById(R.id.nav_user_email);
-        navAvatar = (CircleImageView) header.findViewById(R.id.nav_avatar);
-        navName.setText(user.getString("name"));
-        navMail.setText(user.getEmail());
-        ParseFile file = user.getParseFile("avatar");
-        file.getDataInBackground(new GetDataCallback() {
-            @Override
-            public void done(byte[] bytes, ParseException e) {
-                Bitmap bitmap = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
-                navAvatar.setImageBitmap(bitmap);
-            }
-        });
-        //Must add header view after change its components
-        /*navigationView.addHeaderView(header);*/
-        navigationView.setCheckedItem(R.id.map);
-
+        //Set up map fragment
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.view_route_map);
         mapFragment.getMapAsync(this);
@@ -108,7 +117,8 @@ public class MapViewActivity extends AppCompatActivity implements
 
         new RotaTask(this, map, "Thanh Nhan", "Dai hoc Bach Khoa Ha Noi").execute();
     }
-    public void bt_map_click(View v){
+
+    public void bt_map_click(View v) {
         switch (v.getId()) {
             case R.id.bt_map_findRoute:
 //                Intent intent = new Intent(MapViewActivity.this, ViewRouteActivity.class);
@@ -116,14 +126,15 @@ public class MapViewActivity extends AppCompatActivity implements
                 break;
             case R.id.bt_map_myPlaces:
                 Location location = PlaceData.getGpsData(this);
-                if (location != null){
+                if (location != null) {
                     LatLng latLng = new LatLng(location.getLatitude(), location.getLongitude());
                     addMarker(latLng, "Your location", 3000);
                 }
                 break;
         }
     }
-    Marker addMarker(LatLng latLng,String name, int timeMoveCam_ms){
+
+    Marker addMarker(LatLng latLng, String name, int timeMoveCam_ms) {
         //        LatLng sydney = new LatLng(-34, 151);
         Marker marker = googleMap.addMarker(new MarkerOptions()
                         .position(latLng)
@@ -132,12 +143,13 @@ public class MapViewActivity extends AppCompatActivity implements
 //                .icon(BitmapDescriptorFactory
 //                        .fromResource(R.drawable.photo))
         );
-        if (timeMoveCam_ms>0){
-            googleMap.moveCamera(CameraUpdateFactory.newCameraPosition(new CameraPosition(latLng,14,0,0)));
+        if (timeMoveCam_ms > 0) {
+            googleMap.moveCamera(CameraUpdateFactory.newCameraPosition(new CameraPosition(latLng, 14, 0, 0)));
             googleMap.animateCamera(CameraUpdateFactory.zoomTo(15), timeMoveCam_ms, null);
         }
         return marker;
     }
+
     @Override
     public void onBackPressed() {
         if (drawer.isDrawerOpen(GravityCompat.START)) {
@@ -150,10 +162,12 @@ public class MapViewActivity extends AppCompatActivity implements
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-
+        ParseUser user = ParseUser.getCurrentUser();
         switch (item.getItemId()) {
             case R.id.profile:
+
                 Intent intent = new Intent(MapViewActivity.this, ProfileActivity.class);
+                intent.putExtra("user", user.getUsername());
                 startActivity(intent);
                 break;
             case R.id.notifications:
@@ -165,7 +179,6 @@ public class MapViewActivity extends AppCompatActivity implements
             case R.id.settings:
                 break;
             case R.id.log_out:
-                ParseUser user = ParseUser.getCurrentUser();
                 user.logOut();
                 Intent intent1 = new Intent(MapViewActivity.this, MainActivity.class);
                 startActivity(intent1);

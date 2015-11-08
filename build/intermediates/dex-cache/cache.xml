@@ -2,263 +2,263 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\8.1.0\jars\classes.jar"
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\8.1.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="3c729e6d76a36c5dc27e6a4c4009296f49eaa88a">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-b8456b9879ee5bbce9650512b9ed1c4cd0aea8b6.jar" />
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-9efeb1be9bf2169ece78494612c100b80f475688.jar" />
     </item>
     <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="97f3b099801a9ad9d70e835b9125273e986eb68d">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-01da9f3ada3f37f7310f06e70a37596fbef8ef43.jar" />
-    </item>
-    <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="482de223655d06253cc6a4955d653f8994169500">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-fb71c487001500acce66ff2675b2a44f252be941.jar" />
-    </item>
-    <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="3b05c18f60969ecc2ba49c0409c4b96be2d9cb0c">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-a0cd925c3e02cb04d199e79030c0d69fbe5ef005.jar" />
-    </item>
-    <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\libs\Parse-1.10.3.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="dfef23b83f8434c6e881096e1ac6d54dc3e52041">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\Parse-1.10.3-409989e9f01efc29c72596d093229a1e7ca5ec44.jar" />
-    </item>
-    <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\libs\internal_impl-23.1.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-5ca6f570939b619665bd2718955a5172c96bae95.jar" />
-    </item>
-    <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\8.1.0\jars\classes.jar"
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\8.1.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="d93480da1d303122ee67dc3bc23e6297bdef9951">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-0dd29263ddc51cb0bcc45e900e7dd20f3c88eb1b.jar" />
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-a7fb3f5fd3fdb1fd5f0168725025294baa4263c8.jar" />
     </item>
     <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.2.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="dcf8c83c3dead00a6c4fe313e95f7aaca20dc641">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-a632162e762f80d2cd6368e85557cc3f2b08d4db.jar" />
-    </item>
-    <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="95758a2905669affbffc5ddd262921d375674fad">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-4d4e1a7db61e2e2cb7648b880152b44ffd8554c3.jar" />
-    </item>
-    <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="17449c47df35c754b257532052f1270c444f7993">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-d2f32dea96499e8005d3dabaf6b8db560bb715f0.jar" />
-    </item>
-    <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.2.0\jars\libs\internal_impl-22.2.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="0632f06970823b7e3436f649bfa65b47035c91d0">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-5dd26c133b9b7b6a180426bbb5bc3c2bdadfc768.jar" />
-    </item>
-    <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-52493f29b4b78bd95c6c9acf3d4f5a9eff76768d.jar" />
-    </item>
-    <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="b92002cb2f0e11a226ac5bac6dff1dc2a9d0b774">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-e90d2db0c22e4b525beab44b509527a32f833d5a.jar" />
-    </item>
-    <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-796b9e24a2cb1e356f2dbce1a45a5fc5045809ad.jar" />
-    </item>
-    <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\libs\bolts-android-1.2.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="44780c2cf98f6a3cf4e77f1234d644758b329201">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\bolts-android-1.2.1-2a1b1314538335d2a75473a28946caf872b79f51.jar" />
-    </item>
-    <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-5ca1171b8ca13c5da71a2b2573a70e2c51fb981b.jar" />
-    </item>
-    <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\libs\volley.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\volley-565c277159e215d17828e70a1732213ca47882f7.jar" />
-    </item>
-    <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="3aed37c38c56679602255dd72ef356da5d327cda">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-29306fcff92a9a915eaea05104c73abfb8544a59.jar" />
-    </item>
-    <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="9cf8c0ef60847621c7ad00b4f78dbfc9daba4af2">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-36ace337d419e5bd6c81288ab0645719ffd4c50b.jar" />
-    </item>
-    <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.wdullaer\materialdatetimepicker\1.4.2\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="10f66556026320088327e814108d0a8e80111130">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-f8fd80b13eddda1fd704302d5600940308cc237d.jar" />
-    </item>
-    <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="993834cb17d07d51b92db89d2c330243592ebf77">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-13ab91e8f80694689d2e4b36a32c83615842082f.jar" />
-    </item>
-    <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="d294caf562c4c678b2ef351662a0ca6f1a4d06c0">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-0f7fe480b8f0c2fa5569d57e6285ef1959c86a0b.jar" />
-    </item>
-    <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.android.support\design\23.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="19026d31f5d3ae868db81319671a642be5fbba08">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-90e1f92678e0606c9a646132dd8231f31f347b34.jar" />
-    </item>
-    <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\jars\classes.jar"
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-48870854d21e8a2dbcc2f551777f3b6d898c371d.jar" />
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-b14069bd638d97d71747a3b0c8e82e699a43f70a.jar" />
     </item>
     <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.0\jars\classes.jar"
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\8.1.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-1acef9a9fd9a994e74c62c18b99f903bfbcccbb2.jar" />
+        sha1="3aed37c38c56679602255dd72ef356da5d327cda">
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-2a01802bea25970fe4a23f98f0fd64676c697f8e.jar" />
     </item>
     <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\2.0.0\jars\classes.jar"
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="17449c47df35c754b257532052f1270c444f7993">
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-cc746d6e87cc9554bd0233284908d94e784e7f31.jar" />
+    </item>
+    <item
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d294caf562c4c678b2ef351662a0ca6f1a4d06c0">
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-473920329059cc0e03599ed56c5ee4552c23abf1.jar" />
+    </item>
+    <item
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\2.0.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="031e8b3ab2df4ab43b1017f84417d7e10dfbb8d2">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-b8814771b3200a8ba58eacd0fd6149f0b1ffdf2d.jar" />
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-2423ffee2fbb00f448fafa27a0857b5a5cd961df.jar" />
     </item>
     <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="041d93cf0533591c29d1d7263b2fa114dbfb20bd">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-cbc7c510e18c3bdd54795be21c00f390872ef856.jar" />
-    </item>
-    <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="82825756edeeb3b56b15e73b2edd56e93da5a444">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-1870ce53268988713d6598c02e3cbb0859d2ce4a.jar" />
-    </item>
-    <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="3178362320bcf51228835b60ff978efadfd1f783">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-ab7e4893982d80baa6e652cb430ab09a63a2f7e7.jar" />
-    </item>
-    <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\8.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="d61920aba361832a9545a43fa8c9453eb02f18f7">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-d3aa136e9d46b4b1e4807515387f8e9bb910f812.jar" />
-    </item>
-    <item
-        jar="D:\Program Files\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.0\support-annotations-23.1.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.0-be66d58ad893d4648b9c6df22586fa137ab45eff.jar" />
-    </item>
-    <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.1.0\jars\classes.jar"
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.1.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="2a7e47da654546f9457deb6132364f1bf33a1857">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-cfdd50b8209b93a416d6c5d3d07e588901d15a34.jar" />
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-139fc14e1f5dd696c9a29236d65c973fedd46473.jar" />
     </item>
     <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.1.0\jars\classes.jar"
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.1.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="d96886efea7cc74fbb3abd0e3b51d5638fc57be0">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-5f67a53a079394a8c75cd1013fcdedb42a4b77d7.jar" />
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-59e573fc58da4d31fb4ef190675ca5c68a3679cc.jar" />
     </item>
     <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\8.1.0\jars\classes.jar"
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\libs\volley.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="325788a04b436a0bccbc5b4c54cf0f12ebdcbd2d">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-c829c3fe1745af2590976abffcd4848e6a847ba7.jar" />
+        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\volley-bef6b83417d2b27e1b43550765cf8ba865380f30.jar" />
     </item>
     <item
-        jar="C:\Users\Nguyen\.gradle\caches\modules-2\files-2.1\com.loopj.android\android-async-http\1.4.8\77bbfe240e437ecb396d982afa0d3bd4f9090ba7\android-async-http-1.4.8.jar"
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="77bbfe240e437ecb396d982afa0d3bd4f9090ba7">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\android-async-http-1.4.8-bf04c75c039522e544c01e6254d29d2e795e2f6c.jar" />
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-6ed16653625c577ee7829b3abeb92b7f481479d7.jar" />
     </item>
     <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.1.0\jars\classes.jar"
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\8.1.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="dcb5b75baf05d92e61d5706737200ee55949f97b">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-89ecba59e655e564eeaacd5717db6c6eb044e1cd.jar" />
+        sha1="3178362320bcf51228835b60ff978efadfd1f783">
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-a3ef3a2df01ae345ebc06fd1ef182922b4c93ea4.jar" />
     </item>
     <item
-        jar="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.1.0\jars\classes.jar"
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.wdullaer\materialdatetimepicker\1.4.2\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="10f66556026320088327e814108d0a8e80111130">
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-8e19f4533d4856d61f4f75903e17c2a904c9fd20.jar" />
+    </item>
+    <item
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.1.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="997773777cf3904c11d6764fe3b7668538220e49">
-        <dex dex="C:\Users\Nguyen\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-508e77a96d5769ef8dc362ffc1cb89e530d05afe.jar" />
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-5cd3d5ca5072632bac298585dca12721d10f24df.jar" />
+    </item>
+    <item
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="325788a04b436a0bccbc5b4c54cf0f12ebdcbd2d">
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-7565c5214beca51da213b8d2b8528af661eb0644.jar" />
+    </item>
+    <item
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-177c4e672a3decdd2a91f7db8cc1c50a10b3a823.jar" />
+    </item>
+    <item
+        jar="C:\Users\uendn\.gradle\caches\modules-2\files-2.1\com.loopj.android\android-async-http\1.4.8\77bbfe240e437ecb396d982afa0d3bd4f9090ba7\android-async-http-1.4.8.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="77bbfe240e437ecb396d982afa0d3bd4f9090ba7">
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\android-async-http-1.4.8-2c515819bb06045fd4b3760cbd028271cd1e1e5d.jar" />
+    </item>
+    <item
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="82825756edeeb3b56b15e73b2edd56e93da5a444">
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-529fb08ee6e58dcda2083d48d1cd2b9d6b90c8e3.jar" />
+    </item>
+    <item
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-f0dfdf25f1b0aedce229a1d9a98fce4f19454bcd.jar" />
+    </item>
+    <item
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="0632f06970823b7e3436f649bfa65b47035c91d0">
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-4e5010a1748ed8b4f14fe1c4f89abf489e4efdeb.jar" />
+    </item>
+    <item
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-9a5267ae212863d0c8a0162a14b742529da888a2.jar" />
+    </item>
+    <item
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="dcb5b75baf05d92e61d5706737200ee55949f97b">
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-069a247eca2b59148a1f4b87ae815ce72c9818b1.jar" />
+    </item>
+    <item
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.android.support\design\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="19026d31f5d3ae868db81319671a642be5fbba08">
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-be9a7191373d1a3bd4baa0fb108b28daa93a23ef.jar" />
+    </item>
+    <item
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="9cf8c0ef60847621c7ad00b4f78dbfc9daba4af2">
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-fce57de9d774af4b9f82367dedf2e0612784797d.jar" />
+    </item>
+    <item
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="482de223655d06253cc6a4955d653f8994169500">
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-2c0c3343e10369d821442383d0f94c5b76f3d7f4.jar" />
+    </item>
+    <item
+        jar="E:\Android SDK\extras\android\m2repository\com\android\support\support-annotations\23.1.0\support-annotations-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.0-63ee59a83c5cc6ef72d5b24633d704844d70244d.jar" />
+    </item>
+    <item
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="97f3b099801a9ad9d70e835b9125273e986eb68d">
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-4549edfc6265496a7bcd7b034ecc8c4fbfb807c3.jar" />
+    </item>
+    <item
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="dcf8c83c3dead00a6c4fe313e95f7aaca20dc641">
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-9519f44a4947a53c92e565b96b823a57b578413c.jar" />
+    </item>
+    <item
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\libs\Parse-1.10.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="dfef23b83f8434c6e881096e1ac6d54dc3e52041">
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\Parse-1.10.3-fad6773532f0f73ab311d598d284e956b1ac8df6.jar" />
+    </item>
+    <item
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d61920aba361832a9545a43fa8c9453eb02f18f7">
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-016ff6bb2a559c82900c9cce183998e6f14c470f.jar" />
+    </item>
+    <item
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="993834cb17d07d51b92db89d2c330243592ebf77">
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-50b9bb429e57cdcf81d6a0fe477b3394df0539f1.jar" />
+    </item>
+    <item
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3b05c18f60969ecc2ba49c0409c4b96be2d9cb0c">
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-7aecb8503e0e8c1e3761f472481e47fe48d7cd36.jar" />
+    </item>
+    <item
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="b92002cb2f0e11a226ac5bac6dff1dc2a9d0b774">
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-5c7b31e3d76342826665ff7c755a0b03f92fee75.jar" />
+    </item>
+    <item
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\libs\bolts-android-1.2.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="44780c2cf98f6a3cf4e77f1234d644758b329201">
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\bolts-android-1.2.1-3e63ad332ccd33a75193eaf68c455e4daf4963d0.jar" />
+    </item>
+    <item
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\libs\internal_impl-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-1c37e910cfc68bbff73e1209066ea633eec2b8e6.jar" />
+    </item>
+    <item
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="95758a2905669affbffc5ddd262921d375674fad">
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-d6144272ab700ed9cb2765803d1f1c58c8834f13.jar" />
+    </item>
+    <item
+        jar="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="041d93cf0533591c29d1d7263b2fa114dbfb20bd">
+        <dex dex="C:\Users\uendn\Documents\GitHub\Trather\app\build\intermediates\pre-dexed\debug\classes-e76be42c07019bddedcc4c204403df86ac689df1.jar" />
     </item>
 
 </items>
